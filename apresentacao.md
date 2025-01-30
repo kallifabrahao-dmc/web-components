@@ -7,8 +7,9 @@
 1. Vantagens do vue.
 2. Documentação do usuário/do projeto
 3. Estrutura do projeto
-4. Padronização das tags
-5. Verdaccio
+4. Estrutura de testes
+5. Padronização das tags
+6. Verdaccio
 
 ---
 
@@ -35,8 +36,10 @@
   - 📁 **molecules/**
     - 📁 **menuSidebar/**
       - 📄 **menuSidebar.vue** → UI
-      - 📄 **useMenuSidebar.js** → Composable
-      - 📄 **menuSidebar.test.js** → Testes
+      - 📄 **useMenuSidebar.ts** → Composable
+      - 📄 **interface.ts** → Tipagem
+      - 📄 **menuSidebar.test.ts** → Testes
+      - 📄 **menuSidebar.feature** → Script de teste
 ```
 
 Vantagens: <br>
@@ -51,7 +54,47 @@ Vantagens: <br>
 
 5. Componentes e lógicas reutilizáveis ajudam a reduzir a redundância no código, resultando em uma aplicação mais leve e com melhor desempenho.
 
-## Padronização das tags
+## 3. Estrutura de testes com BDD
+
+1. <strong>Inicio da sprint:</strong> Com os cards em mãos, os devs e o QA se unem em um war room para analisar e descrever todos os cenários possiveis para as tarefas <br>
+
+   <strong>Ação: Analizar DOD, figma e contrato com o back</strong>
+   <br>
+   <br>
+
+2. <strong>Desenvolvimento:</strong> Nessa etapa o dev começa a desenvolver, podendo remover, alterar ou adicionar novos cenários.
+   <br>
+
+   <strong>Todos os cenários previamente descritos devem ser contemplado no desenvolvimento e garantidos através dos testes automatizados.
+   </strong>
+   <br>
+   <br>
+
+3. <strong>Code Review:</strong> Agora a revisão passa a ser guiada, tanto pelo script de teste, quanto pela doc do projeto onde os padrões de qualidade e desenvolvimento foram definidos. <br>
+
+   <strong>
+   O dev na revisão deverá avaliar se os cenarios foram contemplatos e se a implementação segue dentro dos padrões definidos e das boas práticas.
+   </strong>
+   <br>
+   <br>
+
+4. <strong>teste QA:</strong> O QA poderá dividir os testes em duas etapas, na primeira validar que a implementação contempla cada cenario descrito e na segunda, buscar por detalhes que possam ter ficado fora do radar.
+   <br>
+
+   <strong>
+   Nessa etapa ao constar um novo cenário ou falha, o QA deverá retornar ao front para eventual correção e aguardar para o reteste.
+   </strong>
+   <br>
+   <br>
+
+<strong>Vantagens:</strong>
+
+- Todas as etapas serão guiadas, seguindo uma estrutura previamente definida.
+- Todos os envolvidos passam a entender não somente a sua tarefa, mas a do colega também.
+- Seremos mais eficientes e acertivos no code review
+- Teremos mais acertivida no desenolvimento, nos testes automazados e nos testes com o QA.
+
+## 4. Padronização das tags
 
 A padronização das tags de web components é essencial para garantir praticidade, organização e manutenção do código.
 
@@ -59,7 +102,7 @@ A padronização das tags de web components é essencial para garantir praticida
 <ce-menu-sidebar></ce-menu-sidebar>
 ```
 
-## 3. Verdaccio
+## 5. Verdaccio
 
 Verdaccio é um registro de pacotes npm de código aberto e autogerenciado. Ele permite criar um registro privado para hospedar pacotes de forma segura e eficiente, sem depender diretamente de repositórios públicos como o npmjs.com.
 

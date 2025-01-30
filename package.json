@@ -1,6 +1,6 @@
 {
-  "name": "@comerc-teste/comerc-style-guide",
-  "version": "1.0.67",
+  "name": "@comerc-teste/button",
+  "version": "1.0.69",
   "main": "dist/comerc-style-guide.umd.js",
   "module": "dist/comerc-style-guide.es.js",
   "types": "dist/index.d.ts",

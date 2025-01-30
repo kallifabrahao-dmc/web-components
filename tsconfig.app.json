@@ -13,5 +13,11 @@
     "baseUrl": "./src",
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.ce.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.ce.vue",
+    "src/webComponents/molecules/menuSidebar/interfaces.ts"
+  ]
 }
